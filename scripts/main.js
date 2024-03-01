@@ -4,6 +4,9 @@ const searchBar = document.querySelector(".search input");
 const searchButn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 const findTips = document.querySelector(".tips");
+const topButtom = document.querySelector(".top");
+const middleButtom = document.querySelector(".middle");
+const bottomButtom = document.querySelector(".buttom");
 
 async function checkWeather(cityname){
     const response = await fetch(apiUrl + cityname + `&appid=${apiKey}`);
@@ -43,6 +46,25 @@ searchButn.addEventListener("click", ()=>{
 
 findTips.addEventListener("click", ()=>{
     document.querySelector(".profile").style.display = "block";
+})
+
+topButtom.addEventListener("click", ()=>{
+    document.querySelector(".mom").style.display = "block";
+    // document.querySelector(".male").style.display = "none";
+    // document.querySelector(".female").style.display = "none";
+
+})
+
+middleButtom.addEventListener("click", ()=>{
+    document.querySelector(".male").style.display = "block";
+    // document.querySelector(".mom").style.display = "none";
+    // document.querySelector(".female").style.display = "none";
+})
+
+bottomButtom.addEventListener("click", ()=>{
+    document.querySelector(".female").style.display = "block";
+    // document.querySelector(".mom").style.display = "none";
+    // document.querySelector(".male").style.display = "none";
 })
 
 

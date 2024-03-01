@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #222;
+    background: #e1e1e1;
 }
 
 .card{
@@ -103,43 +103,84 @@ body{
 
 }
 .profile{
+    display: none;
     width: 90%;
-    max-width: 900px;
-    background: linear-gradient(100deg, #fe5500, #e1e1e1);
-    margin: -620px 500px 0px;
+    max-width: 250px;
+    background: linear-gradient(100deg,#e1e1e1, #fe5500,  #e1e1e1);
+    color: #fff;
+    margin: -600px 500px 0px;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
-    max-height:  620px;
-    color: #555;
-    display: none;
-    align-items: center;
-}
-.status{
-    border: 2px solid #e1e1e1;
-    margin-top: 50px;
-    padding: 40px;
-    border-radius: 50px;
-    display: block;
 
 }
-.mom, .male{
-    width: 170px;
-    margin-top: 30px;  
+
+.profile button{
+    border: 0;
+    outline: 0;
+    width: 25%;
+    background: #ebfffc;
+    border-radius: 50%; 
+    width: 100px;
+    height: 100px;
     cursor: pointer;
-    margin-right: 100px;
-    display: inline;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+    align-items: center;
+    cursor: pointer;
 
+}
+.profile button img{
+    width: 50px;
+    margin: 25px;
+    cursor: pointer;
+
+}
+.profile  div{
+    align-items: center;
+    margin-right: 30px;
+    cursor: pointer;
+
+}
+
+
+.mom{
+    display: block;
+    width: 90%;
+    max-width: 700px;
+    background: linear-gradient(100deg, #e1e1e1, #fe5500);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    margin: -450px 750px 0px;
+}
+.male{
+    display: block;
+    width: 90%;
+    max-width: 700px;
+    background: linear-gradient(100deg, #e1e1e1, #fe5500);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    margin: 10px 750px 0px;
 }
 .female{
-    width: 170px;
-    margin-top: 30px;  
-    cursor: pointer;
-    margin-right: 10px;
-    display: inline; 
+    display: block;
+    width: 90%;
+    max-width: 700px;
+    background: linear-gradient(100deg, #e1e1e1, #fe5500);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    margin: 10px 750px 0px;
 }
 
 .weather,
-.tips{
+.tips,
+{
     display: none;
 }
