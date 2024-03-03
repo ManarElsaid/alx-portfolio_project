@@ -146,7 +146,7 @@ body{
 
 
 .mom{
-    display: block;
+    display: none;
     width: 90%;
     max-width: 700px;
     background: linear-gradient(100deg, #e1e1e1, #fe5500);
@@ -157,7 +157,7 @@ body{
     margin: -450px 750px 0px;
 }
 .male{
-    display: block;
+    display: none;
     width: 90%;
     max-width: 700px;
     background: linear-gradient(100deg, #e1e1e1, #fe5500);
@@ -168,7 +168,7 @@ body{
     margin: 10px 750px 0px;
 }
 .female{
-    display: block;
+    display: none;
     width: 90%;
     max-width: 700px;
     background: linear-gradient(100deg, #e1e1e1, #fe5500);
@@ -180,7 +180,7 @@ body{
 }
 
 .weather,
-.tips,
+.tips
 {
     display: none;
 }
