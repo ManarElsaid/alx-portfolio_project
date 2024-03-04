@@ -12,7 +12,7 @@ body{
 .card{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(100deg, #fe5500, #e1e1e1);
+    background: linear-gradient(100deg, #fe5500, #cac7c7);
     color: #fff;
     margin: 100px 10px 0;
     border-radius: 20px;
@@ -106,7 +106,7 @@ body{
     display: none;
     width: 90%;
     max-width: 250px;
-    background: linear-gradient(100deg,#e1e1e1, #fe5500,  #e1e1e1);
+    background: linear-gradient(100deg,#cac7c7, #fe5500,  #cac7c7);
     color: #fff;
     margin: -600px 500px 0px;
     border-radius: 20px;
@@ -144,39 +144,48 @@ body{
 
 }
 
-
+.status{
+    position: relative;
+    top: -450px;
+    left: 750px;
+    margin-left: 10px;
+}
 .mom{
     display: none;
     width: 90%;
     max-width: 700px;
-    background: linear-gradient(100deg, #e1e1e1, #fe5500);
+    background: linear-gradient(100deg, #cac7c7, #fe5500);
     color: #fff;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
-    margin: -450px 750px 0px;
+    /* margin: 0px 750px 0px; */
 }
+
 .male{
     display: none;
     width: 90%;
     max-width: 700px;
-    background: linear-gradient(100deg, #e1e1e1, #fe5500);
+    background: linear-gradient(100deg, #cac7c7, #fe5500);
     color: #fff;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
-    margin: 10px 750px 0px;
+    /* margin: 0px 750px 0px; */
+    margin-top: 25px;
+
 }
 .female{
     display: none;
     width: 90%;
     max-width: 700px;
-    background: linear-gradient(100deg, #e1e1e1, #fe5500);
+    background: linear-gradient(100deg, #cac7c7, #fe5500);
     color: #fff;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
-    margin: 10px 750px 0px;
+    /* margin: 0px 750px 0px; */
+    margin-top: 25px;
 }
 
 .weather,
