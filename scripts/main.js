@@ -41,7 +41,11 @@ async function checkWeather(cityname){
         weatherIcon.src = "../images/clear.png";
 
         //changing tips for clear weather
-        momContent.innerHTML = "Embrace the sunshine with light, breathable fabrics like cotton or linen. A flowy sundress paired with sandals will keep you cool and stylish.";
+        momContent.innerHTML = "<ul> \
+            <li>Embrace the sunshine with light</li> \
+            <li>breathable fabrics like cotton or linen.</li> \
+            <li>A flowy sundress paired with sandals will keep you cool and stylish.</li>\
+        </ul>"
         femaleContent.innerHTML = " Showcase your style with breezy dresses and skirts in lightweight fabrics like chiffon or silk. Pair them with open-toe shoes or sandals for an effortlessly chic look.";
         maleContent.innerHTML = " Keep it cool and casual with breathable fabrics like cotton or linen. Pair a classic button-down shirt with chinos or shorts for a laid-back yet polished look.";
     }
@@ -64,22 +68,23 @@ findTips.addEventListener("click", ()=>{
 });
 
 topButton.addEventListener("click", ()=>{
-    document.querySelector(".mom").style.display = "block";
-    // document.querySelector(".male").style.display = "none";
-    // document.querySelector(".female").style.display = "none";
+    document.querySelector(".mom").style.display = "flex";
+    document.querySelector(".mom").style.transitionDuration = "2s";
+    document.querySelector(".male").style.display = "none";
+    document.querySelector(".female").style.display = "none";
 
 });
 
 middleButton.addEventListener("click", ()=>{
     document.querySelector(".male").style.display = "block";
-    // document.querySelector(".mom").style.display = "none";
-    // document.querySelector(".female").style.display = "none";
+    document.querySelector(".mom").style.display = "none";
+    document.querySelector(".female").style.display = "none";
 });
 
 bottomButton.addEventListener("click", ()=>{
     document.querySelector(".female").style.display = "block";
-    // document.querySelector(".mom").style.display = "none";
-    // document.querySelector(".male").style.display = "none";
+    document.querySelector(".mom").style.display = "none";
+    document.querySelector(".male").style.display = "none";
 });
 
 

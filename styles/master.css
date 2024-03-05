@@ -14,7 +14,7 @@ body{
     max-width: 470px;
     background: linear-gradient(100deg, #fe5500, #cac7c7);
     color: #fff;
-    margin: 100px 10px 0;
+    margin: 10px 10px 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
@@ -154,6 +154,7 @@ body{
     display: none;
     width: 90%;
     max-width: 700px;
+    height: 400px;
     background: linear-gradient(100deg, #cac7c7, #fe5500);
     color: #fff;
     border-radius: 20px;
@@ -165,7 +166,7 @@ body{
 .male{
     display: none;
     width: 90%;
-    max-width: 700px;
+    /* max-width: 700px; */
     background: linear-gradient(100deg, #cac7c7, #fe5500);
     color: #fff;
     border-radius: 20px;
