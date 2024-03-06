@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "alx-portfolio_project",
+			"path": ".."
+		},
+		{
+			"name": "images",
+			"path": "../../Downloads/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "alx-portfolio_project"
+	}
+}
