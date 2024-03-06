@@ -162,17 +162,17 @@ body{
     /* margin: 0px 750px 0px; */
 }
 
-.male{
+.traveller{
     display: none;
     width: 90%;
-    /* max-width: 700px; */
+    max-width: 580px;
+    height: 400px;
     background: linear-gradient(100deg, #cac7c7, #fe5500);
     color: #fff;
     border-radius: 20px;
-    padding: 40px 35px;
-    text-align: center;
+    padding: 140px 35px;
     /* margin: 0px 750px 0px; */
-    margin-top: 25px;
+    /* margin-top: 25px; */
 
 }
 .female{
