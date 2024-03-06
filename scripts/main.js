@@ -9,7 +9,7 @@ const middleButton = document.querySelector(".middle");
 const bottomButton = document.querySelector(".bottom");
 const momContent = document.querySelector(".mom p");
 const travContent = document.querySelector(".traveller p");
-const femaleContent = document.querySelector(".female p");
+const allergyContent = document.querySelector(".allergy p");
 
 async function checkWeather(cityname){
     const response = await fetch(apiUrl + cityname + `&appid=${apiKey}`);
@@ -35,6 +35,12 @@ async function checkWeather(cityname){
         <li>Consider indoor attractions like shopping malls, theaters, or indoor markets.</li>\
         <li>Embrace the moody ambiance by exploring historic sites or quaint villages.</li>\
     </ul>";
+
+        allergyContent.innerHTML = "<ul> \
+        <li>Consider taking vitamin D supplements if you're not getting enough sunlight exposure.</li>\
+        <li> If you have respiratory issues, monitor air quality reports and <br>consider wearing a mask if necessary.</li>\
+        <li>Practice mindfulness or meditation indoors to combat any feelings of <br>gloominess associated with cloudy weather.</li>\
+    </ul>";
     }
     else if (weatherData.weather[0].main == "Rain"){
         weatherIcon.src = "../images/rain.png";
@@ -50,6 +56,12 @@ async function checkWeather(cityname){
         <li>Pack a compact umbrella or waterproof raincoat to stay dry while exploring.</li>\
         <li>Wear waterproof shoes to avoid soggy feet while walking around.</li>\
         <li>Plan indoor activities like visiting museums, galleries, or cafes to escape the rain.</li>\
+    </ul>";
+
+        allergyContent.innerHTML = "<ul> \
+        <li>If you have allergies, check pollen forecasts and consider staying indoors during peak pollen times.</li>\
+        <li>Wear proper footwear to avoid slipping and falling.</li>\
+        <li> Dress warmly and stay dry to prevent chills, especially if prone to them.</li>\
     </ul>";
     }
     else if (weatherData.weather[0].main == "Mist"){
@@ -67,6 +79,12 @@ async function checkWeather(cityname){
         <li>Allow extra time for travel and use a map or GPS to navigate safely.</li>\
         <li>Enjoy the mystical atmosphere by visiting scenic spots or taking nature walks in the mist.</li>\
     </ul>";
+
+        allergyContent.innerHTML = "<ul> \
+        <li>Be cautious while walking or driving due to reduced visibility.</li>\
+        <li> If you have respiratory issues, monitor your symptoms and adjust <br> medications as needed (consult your doctor).</li>\
+        <li> Consider indoor activities like indoor cycling, swimming, or dancing to stay <br> active while avoiding misty conditions.</li>\
+    </ul>";
     }
     else if (weatherData.weather[0].main == "Drizzle"){
         weatherIcon.src = "../images/drizzle.png";
@@ -83,6 +101,12 @@ async function checkWeather(cityname){
         <li>Explore covered outdoor attractions like botanical gardens or covered markets.</li>\
         <li>Take breaks in cafes or restaurants to warm up and enjoy hot beverages.</li>\
     </ul>";
+
+        allergyContent.innerHTML = "<ul> \
+        <li>If you have joint pain or arthritis, consider gentle exercises like tai chi or swimming <br> to minimize discomfort in damp weather.</li>\
+        <li>Focus on indoor activities like cooking healthy meals, practicing relaxation techniques, or engaging in hobbies.</li>\
+        <li> Similar to mist, monitor your symptoms and adjust medications as needed (consult your doctor).</li>\
+    </ul>";
     }
     else if (weatherData.weather[0].main == "Clear"){
         weatherIcon.src = "../images/clear.png";
@@ -95,10 +119,16 @@ async function checkWeather(cityname){
             <li>Keep your child hydrated by offering plenty of water,<br>especially if they're playing outside.</li>\
         </ul>"
     
-        travContent.innerHTML = "<ul> \
+        travContent.innerHTML = "<ul>\
         <li>Pack sunglasses and sunscreen to protect yourself from the sun's rays.</li>\
         <li>Stay hydrated by carrying a water bottle and drinking plenty of fluids,<br>especially if you're exploring outdoors.</li>\
         <li>Take advantage of the clear skies for outdoor sightseeing and photography.</li>\
+    </ul>"
+
+        allergyContent.innerHTML = "<ul>\
+        <li>Apply sunscreen and wear protective clothing if sensitive to sunlight.</li>\
+        <li>Remember to stay hydrated by drinking plenty of water throughout the day.</li>\
+        <li>Take advantage of the sunshine by engaging in outdoor activities like <br>walking, jogging, or yoga.</li>\
     </ul>"
     }
     else if (weatherData.weather[0].main == "Snow"){
@@ -115,6 +145,12 @@ async function checkWeather(cityname){
         <li>Dress in layers with waterproof and insulated clothing to stay warm.</li>\
         <li>Wear sturdy boots with good traction to prevent slipping on icy sidewalks.</li>\
         <li>Enjoy winter activities like skiing, snowboarding, or building snowmen in designated areas.</li>\
+    </ul>"
+
+        allergyContent.innerHTML = "<ul> \
+        <liWear appropriate footwear with good traction to prevent slips and falls on icy surfaces.</li>\
+        <li>Avoid strenuous activity like shoveling snow if you have heart or respiratory issues.</li>\
+        <li>Consider indoor workouts like strength training, yoga, or indoor cycling on days <br>when outdoor conditions are too harsh.</li>\
     </ul>"
     }
 
@@ -147,7 +183,7 @@ middleButton.addEventListener("click", ()=>{
 });
 
 bottomButton.addEventListener("click", ()=>{
-    document.querySelector(".female").style.display = "block";
+    document.querySelector(".allergy").style.display = "block";
     document.querySelector(".mom").style.display = "none";
     document.querySelector(".traveller").style.display = "none";
 });
